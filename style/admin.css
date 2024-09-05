@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+@media print {
+    .ad {
+        display: none;
+    }
+    .print{
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-weight: 500;
+        width: 100%;
+    }
+}
+
+
+body::-webkit-scrollbar {
+    width: 0px;           /* ширина всей полосы прокрутки */
+}
+
+header{
+    background: url(../assets/adminheader.png);
+    height: 10.13rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper a{
+    color: rgb(241, 238, 219);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.admin-name-holder{
+    background: url(../assets/adminpaper1.png);
+    height: 6.75rem;
+    width: 100%;
+}
+
+.admin-name{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.admin-name{
+    padding-left: 2rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: url(../assets/div.chalkboard.png);
+}
+
+aside{
+    background: url(../assets/adminpaper2.png);
+    margin-top: -.1rem;
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside ul li{
+    list-style: none;
+    box-sizing: border-box;
+    border: 0.38rem solid rgb(77, 68, 61);
+    padding: .8rem;
+    margin: .39rem;
+}
+
+aside ul li:first-child{
+    margin-top: 1.17rem;
+}
+
+
+aside ul li a{
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+aside hr{
+    border: 0.19rem solid rgb(77, 68, 61);
+}
+
+.top-hr{
+    margin-top: .1rem;
+}
+
+.item-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: 0.8rem;
+    height: 100%;
+    padding: 3rem;
+}
+
+.form-holder, .card-holder, .otch{
+    background: url(../assets/admincard.png);
+    background-size: cover;
+}
+
+.card-holder, .otch{
+    width: 40%;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding:1rem ;
+}
+
+.item p, .otch p{
+    display: flex;
+    align-items: center;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+.item input, select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+    outline: none;
+}
+
+.item input:focus, select:focus{
+    outline: 0.38rem solid rgb(77, 68, 61);
+}
+
+.item button{
+    background: transparent;
+    outline: none;
+    border: 0.38rem solid rgb(77, 68, 61);
+    cursor: pointer;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+}
+
+
+.btn-primary{
+    background: transparent;
+    outline: none;
+    border: 0.38rem solid rgb(241, 238, 219);;
+    cursor: pointer;
+    color: rgb(241, 238, 219);;
+    font-family: Rubik;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+}
+
+iframe{
+    width: 100%;
+    overflow: scroll;
+    border: none;
+    outline: none;
+    height: 98%;
+  }
+
+  .sad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(241, 238, 219);
+    font-family: Rubik;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
+}
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,   
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+  }

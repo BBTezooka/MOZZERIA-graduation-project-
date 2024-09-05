@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  background: url(../assets/div.chalkboard.png) no-repeat;
+  height: 98svh;
+}
+
+.wrapper{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.logo{
+  margin-top: 10rem;
+}
+
+.login{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  background: url('../assets/бумага.png') no-repeat;
+  background-size: contain;
+  width: 42.63rem;
+  height: 26.31rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form h3{
+  color: rgb(77, 68, 61);
+  font-family: Rubik;
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 5.31rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form input{
+  box-sizing: border-box;
+  border: 0.38rem solid rgb(77, 68, 61);
+  background: none;
+  width: 32.75rem;
+  height: 3.63rem;
+  margin-bottom: 2rem;
+  color: rgb(31, 31, 31);
+  font-family: Rubik;
+  font-size: 2rem;
+  font-weight: 440;
+  line-height: 2.38rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,   
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+form input:last-child{
+  margin-bottom: 1.3rem;
+}
+
+form input::placeholder{
+  color: rgba(77, 68, 61, 0.5);
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons .btn-account{
+  cursor: pointer;
+  color: rgb(77, 68, 61);
+  font-family: Rubik;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.38rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0rem 4.38rem 6.25rem -1.56rem rgba(0, 0, 0, 0.5);
+  border: 0.38rem solid rgb(77, 68, 61);
+  background: none;
+  outline: none;
+}
+
+.reg{
+  display: flex;
+  align-items: center;
+}
+
+.reg a{
+  color: rgb(77, 68, 61);
+  font-family: Rubik;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.38rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tomato, .olives{
+  position: absolute;
+}
+
+.tomato{ 
+  top: 40%;
+  left: 4%;
+  z-index: -1;
+  user-select: none;
+}
+
+.olives{
+  top: 5%;
+  left: 68%;
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100%{
+      transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tomato .vegy-animation {
+    animation: wipe-enter 6s infinite alternate;
+  }
+
+  .olives .vegy-animation {
+    animation: wipe-enter 4s infinite alternate;
+  }
+}

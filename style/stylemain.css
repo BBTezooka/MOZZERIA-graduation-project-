@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+
+}
+
+ body{
+    background-color: rgba(136, 207, 255, 0.486);
+    font-family: 'Open Sans', sans-serif;
+} 
+
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #3082ee;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.buttons{
+    margin-top: 35px;
+    margin-left: 360px;
+
+}
+
+
+.buttons li{
+    list-style: none;
+    display: inline;
+    padding: 85px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #fffefe;
+    font-size: large;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.buttons a:hover{
+    color: #f5e7e7;
+}
+

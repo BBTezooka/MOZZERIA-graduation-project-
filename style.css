@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;               /* ширина всей полосы прокрутки */
+  }
+
+.swiper-pagination-bullet-active{
+    background: rgb(241, 238, 219);
+}
+
+.swiper-button-prev,.swiper-button-next{
+    color: rgb(241, 238, 219);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url('assets/фон.png') no-repeat ;
+    background-size: cover;
+    
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(241, 238, 219);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 90%, rgb(241, 238, 219) 90%, rgb(226, 225, 217) 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 200ms;
+}
+
+nav ul li a:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: rgb(241, 238, 219);
+}
+
+
+.big-text-holder{
+    width: 100%;
+    height: 52rem;
+}
+
+.big-text-holder .big-text{
+    width: 100%;
+    height: 70%;
+    color: rgb(241, 238, 219);
+    font-family: Rubik;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5.31rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 40%;
+}
+
+main{
+    background: url('assets/div.chalkboard.png');
+}
+
+
+.about-top{
+    display: grid;
+    grid-template-columns: 85rem 35rem;
+}
+
+.about-bottom{
+    display: grid;
+    grid-template-columns: 35rem 85rem;
+}
+
+.top-text{
+    position: relative;
+    background: url('assets/бумага.png') no-repeat;
+    background-size: cover;
+    height: 40rem;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-text span{
+    color: rgb(77, 68, 61);
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 5.31rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 16.7rem;
+    z-index: 1;
+}
+
+.top-text p{
+    padding-left: 17rem;
+    width: 95%;
+    color: rgb(77, 68, 61);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    z-index: 1;
+}
+
+.pizza-circle{
+    position: absolute;
+    top: 3rem;
+    left: -13rem;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.mushroom-holder{
+    position: relative;
+}
+
+.mushroom{
+    height: 50%;
+}
+
+.mushroom img{
+    width: 33rem;
+    height: 30rem;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    position: absolute;
+    top: 24rem;
+    left: -9rem;
+    user-select: none;
+}
+
+
+.vakansii{
+    margin-top: 18rem;
+    padding-bottom: 4rem;
+}
+
+
+.vakansya{
+    background: url('assets/бумагапицца.png') no-repeat;
+    background-size: cover;
+    height: 40rem;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-bottom{
+    position: relative;
+}
+
+.pepper-picture img{
+    width: 33rem;
+    height: 33rem;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    position: absolute;
+    top: -7rem;
+    left: 3rem;
+    user-select: none;
+}
+
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-scrollbar{
+    display: none;
+}
+
+.hiring{
+    width: 100%;
+    height: 100%;
+}
+
+.hiring {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 8rem);
+    height: 100%;
+}
+
+.hire-about{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 14rem;
+    padding-top: 2rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 5.31rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.hire-name{
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 4.3rem;
+    font-weight: 400;
+    line-height: 4.75rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    grid-area: 1/2/2/1;
+}
+
+.hire-otdel{
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    grid-area: 2/2/2/1;
+}
+
+.hire-okald{
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    grid-area: 3/1/3/1;
+}
+
+.hiring form{
+    grid-area: 4/1/5/1;
+    display: flex;
+    align-items: center;
+    padding-left: 4.5rem;
+}
+
+
+.hire-btn{
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 0.38rem solid rgb(77, 68, 61);
+    
+}
+
+
+.hire-btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: rgb(77, 68, 61);
+    font-family: Rubik;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    transition: all .2s ease-in-out;
+    
+}
+
+.hire-btn a:hover {
+    padding: 1.1rem 2.2rem;
+}
+
+
+footer{
+    background: url('assets/фонфутера.png');
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-info-footer{
+    height: 85%;
+    display: grid;
+    grid-template-columns: 23% 45% 32%;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts{
+    color: rgb(241, 238, 219);
+    font-family: Rubik;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.phone-num, .mail{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.buttons ul{
+    padding: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.buttons ul li a{
+    text-decoration: none;
+    color: rgb(241, 238, 219);
+    font-family: Rubik;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.copiright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    color: rgb(241, 238, 219);
+    font-family: Rubik;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.31rem;
+    letter-spacing: 0rem;
+    text-align: center;
+}
+
+@keyframes wipe-enter {
+    0% {
+      transform: translateY(-1rem);
+    }
+    50% {
+      transform: translateY(2rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .vegy-animation {
+      animation: wipe-enter 3s infinite alternate;
+    }
+  }
